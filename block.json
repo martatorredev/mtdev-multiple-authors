@@ -1,0 +1,36 @@
+{
+	"apiVersion": 3,
+	"name": "mtdev/multiple-authors",
+	"version": "1.0.0",
+	"title": "Multiple Authors",
+	"category": "theme",
+	"icon": "groups",
+	"description": "Accessible block to select and display multiple authors (co-authors) for WordPress posts.",
+	"textdomain": "mtdev-multiple-authors-block",
+	"supports": {
+		"html": false,
+		"align": [ "left", "center", "right" ]
+	},
+	"usesContext": [ "postId", "postType" ],
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "p"
+		},
+		"showLabel": {
+			"type": "boolean",
+			"default": true
+		},
+		"labelText": {
+			"type": "string",
+			"default": "By"
+		},
+		"separator": {
+			"type": "string",
+			"default": ", "
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/style-index.css",
+	"editorStyle": "file:./build/editor.css"
+}
